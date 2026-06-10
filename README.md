@@ -18,15 +18,30 @@ En esta practica se uso las siguientes estructuras dinamicas lineales para reali
 *Colas con Queue
 
 ### Captura de salida en consola
-
+![alt text](assets/Ejr1.png)
 
 ### Captura del código de implementación del ejercicio 1
 
-![Captura del código de implementación](assets/02-app-implementacion-code.png)
+![alt text](assets/CodEjer1.png)
 
 o bloque de código .
 
 ```java
 public String invertString(String texto) {
-    // Implementación del método
+    ArrayDeque<Character> pila = new ArrayDeque<>();
+
+ 
+        for (char letra : texto.toCharArray()) {
+            pila.push(letra);
+        } 
+ 
+        String invertido = "";
+ 
+        while (!pila.isEmpty()) {
+            char letra = pila.pop();
+            invertido += letra;
+        }
+ 
+        return invertido;
+
 }

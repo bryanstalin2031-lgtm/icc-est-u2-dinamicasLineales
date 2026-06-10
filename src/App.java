@@ -10,11 +10,26 @@ public class App {
         runQueue();
  
         runStack();
- 
+        
+        System.out.println();
+        System.out.println("---Ejercicio 1---");
         Ejercicio1 ejercicio1 = new Ejercicio1();
         String texto = "COMPUTACION";
         String textoInvertido = ejercicio1.invertString(texto);
         System.out.println(textoInvertido);
+        System.out.println();
+        System.out.println("--Ejercicio 2---");
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        String texto2 = "radar";
+        boolean invertido = ejercicio2.esPalindromo(texto2);
+        System.out.println(invertido);
+
+        Ejercicio2 ejercicio2a = new Ejercicio2();
+        String texto3 = "computacion";
+        boolean invertido2 = ejercicio2a.esPalindromo(texto3);
+        System.out.println(invertido2);
+
+
     }
  
     private static void runStack() {
