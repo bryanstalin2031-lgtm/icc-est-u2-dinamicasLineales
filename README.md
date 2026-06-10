@@ -12,9 +12,13 @@
 **Fecha:** [08/06/2026]
 
 **Descripción:**
+
 En esta practica se uso las siguientes estructuras dinamicas lineales para realizar la inversion de una palabra:
+
 *LinkedList
+
 *Pilas con Stack y Deque
+
 *Colas con Queue
 
 ### Captura de salida en consola
@@ -44,4 +48,37 @@ public String invertString(String texto) {
  
         return invertido;
 
+}
+```
+
+## 2. Ejercicio Palíndromo
+
+**Fecha:** [09/06/2026]
+
+**Descripción:**
+
+En esta practica usamos la estructura de:
+
+*Pilas con Stack y Deque
+
+Para verificar que si las palabras son palíndromas.
+
+### Método implementado
+
+````java
+public boolean esPalindromo(String texto) {
+    for (char letra : texto.toCharArray()) {
+            pila.push(letra);
+        }
+        String invertido = "";
+        while (!pila.isEmpty()) {
+            char letra = pila.pop();
+            invertido += letra;
+        }
+        if (texto.equals(invertido)) {
+            return true;
+        } else {
+            return false;
+        }
+    
 }
